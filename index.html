@@ -33,16 +33,16 @@
 
   <body>
       
-  <video src="vid.mp4" autoplay loop playsinline ></video>
+  <video src="vid.mp4" autoplay loop playsinline muted ></video>
     
    
     <div class="main-div">
     <div class="lock_div" id="lock_div_id">
-        <p style="color:white">URL🔗</p>
+        <p style="color:white">Enter your URL🔗</p>
         <input type="url" id="url" placeholder="https://example.com">
         <p style="color:white">PASSWORD🔑</p>
         <input type="password" id="url_key" placeholder="********">
-        <button id="lock_btn"><font style="color:white">LOCK THE URL</font></button>
+        <button id="lock_btn"><font style="color:black">LOCK THE URL</font></button>
     </div>
     <div class="url_display" id="url_display_id">
         <textarea id="locked_url" cols="40" rows="4" readonly></textarea>
