@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="LOCK your URL with password🔐.Developed by Tanzim Khan Rafi.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="google-site-verification" content="2SUTqtLYtAtyg4_k6jjkH-RX7tY7rf0SGVNETvitmv4" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  
+    <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#000000" >
+    <meta property="og:image" content="og.jpg">
+    <meta property="og:url" content="https://rafitanzim.github.io/locker" />
+    <meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+    <meta property="og:site_name" content="Link Locker" />
+   <style>
+         
+            .proma2{
+                margin-top:190px;
+                text-align: center;
+                
+            }
+
+            
+    </style>
+    <title>Link Locker</title>
+
+  
+</head>
+
+  <body>
+      
+  <video src="vid.mp4" autoplay loop playsinline muted></video>
+    
+   
+    <div class="main-div">
+    <div class="lock_div" id="lock_div_id">
+        <p style="color:white">URL🔗</p>
+        <input type="url" id="url" placeholder="https://example.com">
+        <p style="color:white">PASSWORD🔑</p>
+        <input type="password" id="url_key" placeholder="********">
+        <button id="lock_btn"><font style="color:white">LOCK THE URL</font></button>
+    </div>
+    <div class="url_display" id="url_display_id">
+        <textarea id="locked_url" cols="40" rows="4" readonly></textarea>
+        <button id="copy_btn"><font style="color:white">COPY URL</font></button>
+        <img id="lurl_qr">
+    </div>
+</div>
+<div class="main-div2">
+    <div class="unlock_div" id="unlock_div_id">
+        <p style="color:white">Password🔑</p>
+        <input type="password" id="lurl_key" placeholder="********">
+        <button id="unlock_btn"><font style="color:white">UNLOCK</font></button>
+        
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+     
+
+</body>
+
+
+</html>
