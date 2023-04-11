@@ -42,11 +42,11 @@
         <input type="url" id="url" placeholder="https://example.com">
         <p style="color:white">PASSWORD🔑</p>
         <input type="password" id="url_key" placeholder="********">
-        <button id="lock_btn"><font style="color:black">LOCK THE URL</font></button>
+        <button id="lock_btn" onclick="vibrateSimple()"><font style="color:black">LOCK THE URL</font></button>
     </div>
     <div class="url_display" id="url_display_id">
         <textarea id="locked_url" cols="40" rows="4" readonly></textarea>
-        <button id="copy_btn"><font style="color:white">COPY URL</font></button>
+        <button id="copy_btn" onclick="vibrateSimple()"><font style="color:white">COPY URL</font></button>
         <img id="lurl_qr">
     </div>
 </div>
@@ -54,14 +54,19 @@
     <div class="unlock_div" id="unlock_div_id">
         <p style="color:white">Password🔑</p>
         <input type="password" id="lurl_key" placeholder="********">
-        <button id="unlock_btn"><font style="color:white">UNLOCK</font></button>
+        <button id="unlock_btn" onclick="vibrateSimple()"><font style="color:white">UNLOCK</font></button>
         
     </div>
 </div>
 
     <script src="script.js"></script>
 
-     
+     <script>
+
+function vibrateSimple() {
+  navigator.vibrate(100);
+}
+</script>
 
 </body>
 
